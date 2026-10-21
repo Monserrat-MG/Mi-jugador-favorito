@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06152f">
+
+    <title>Mi jugador favorito 💙⚽</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Música de fondo -->
+    <audio id="musica" autoplay loop preload="auto">
+        <source src="cancion.mpeg" type="audio/mpeg">
+        Tu navegador no admite audio HTML5.
+    </audio>
+
+    <!-- Fondo decorativo -->
+    <div class="fondo-estadio" aria-hidden="true">
+        <div class="luz luz-izquierda"></div>
+        <div class="luz luz-derecha"></div>
+        <div class="lineas-cancha"></div>
+        <div id="particulas"></div>
+    </div>
+
+    <!-- Barra superior -->
+    <header class="barra-superior">
+        <a class="marca" href="#inicio" aria-label="Ir al inicio">
+            <span class="marca-icono">⚽</span>
+            <span>PARA MI VIEJITO</span>
+        </a>
+
+        <button
+            id="boton-musica"
+            class="boton-musica"
+            type="button"
+            aria-label="Activar música"
+            aria-pressed="false">
+            <span id="icono-musica">♫</span>
+            <span id="texto-musica">Activar música</span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- Presentación -->
+        <section id="inicio" class="hero seccion">
+            <div class="etiqueta">
+                <span class="punto"></span>
+                UNA DEDICATORIA ESPECIAL
+            </div>
+
+            <p class="sobre-titulo">Hay jugadores buenos...</p>
+
+            <h1>
+                Pero tú eres
+                <span class="texto-azul">mi favorito.</span>
+            </h1>
+
+            <p class="hero-descripcion">
+                Un pequeño espacio para alguien que merece saber
+                lo orgullosa que estoy de él. 💙
+            </p>
+
+            <a href="#sus-momentos" class="boton-principal">
+                Descubre tu homenaje
+                <span>↓</span>
+            </a>
+
+            <div class="hero-balones" aria-hidden="true">
+                <span>⚽</span>
+                <span>✦</span>
+                <span>⚽</span>
+            </div>
+
+            <div class="marcador">
+                <div>
+                    <span class="marcador-label">MI EQUIPO FAVORITO</span>
+                    <strong>TÚ</strong>
+                </div>
+
+                <div class="marcador-centro">VS</div>
+
+                <div>
+                    <span class="marcador-label">MI APOYO</span>
+                    <strong>SIEMPRE 💙</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos y fotografía -->
+        <section id="sus-momentos" class="seccion momentos">
+
+            <div class="encabezado-seccion">
+                <span class="numero-seccion">01 / SUS MOMENTOS</span>
+
+                <h2>
+                    La cancha es tuya,
+                    <span class="texto-azul">viejito.</span>
+                </h2>
+
+                <p>
+                    Cada video y cada fotografía guardan un pedacito
+                    de algo que te apasiona.
+                </p>
+            </div>
+
+            <!-- Composición piramidal -->
+            <div class="piramide">
+
+                <!-- Video principal -->
+                <article class="recuerdo recuerdo-principal">
+                    <div class="marco-media">
+                        <video
+                            class="video-recuerdo"
+                            controls
+                            muted
+                            playsinline
+                            preload="metadata"
+                            poster="assets/foto.jpg">
+
+                            <source src="video2.mp4" type="video/mp4">
+
+                            Tu navegador no puede reproducir este video.
+                        </video>
+
+                        <span class="etiqueta-media">JUGADA DESTACADA</span>
+                    </div>
+
+                    <div class="pie-recuerdo">
+                        <span class="icono-recuerdo">▶</span>
+                        <div>
+                            <h3>Tu pasión en movimiento</h3>
+                            <p>Un momento que merece quedarse.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Segunda fila de la pirámide -->
+                <div class="piramide-inferior">
+
+                    <article class="recuerdo">
+                        <div class="marco-media">
+                            <video
+                                class="video-recuerdo"
+                                controls
+                                muted
+                                playsinline
+                                preload="metadata">
+
+                                <source src="video3.mp4" type="video/mp4">
+
+                                Tu navegador no puede reproducir este video.
+                            </video>
+
+                            <span class="etiqueta-media">EN LA CANCHA</span>
+                        </div>
+
+                        <div class="pie-recuerdo">
+                            <span class="icono-recuerdo">⚽</span>
+                            <div>
+                                <h3>Tu esfuerzo</h3>
+                                <p>Lo que te gusta hacer.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="recuerdo">
+                        <div class="marco-media marco-foto">
+                            <img
+                                src="foto.jpeg"
+                                alt="Fotografía especial de mi jugador favorito"
+                                class="foto-recuerdo">
+
+                            <span class="etiqueta-media">UN RECUERDO</span>
+                        </div>
+
+                        <div class="pie-recuerdo">
+                            <span class="icono-recuerdo">♡</span>
+                            <div>
+                                <h3>Mi favorito</h3>
+                                <p>Un lugar especial para ti.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <p class="nota-media">
+                Hecho con cariño, para alguien que merece sentirse orgulloso
+                de lo que hace. 💙
+            </p>
+        </section>
+
+        <!-- Mensaje sobre el fútbol -->
+        <section class="seccion orgullo">
+            <div class="orgullo-icono" aria-hidden="true">🏆</div>
+
+            <span class="numero-seccion">02 / ALGO QUE QUIERO QUE SEPAS</span>
+
+            <h2>
+                Mi orgullo dentro
+                <span class="texto-azul">y fuera de la cancha.</span>
+            </h2>
+
+            <p>
+                Sé que te gusta el fútbol, sé que juegas bien y me hace
+                feliz saber que tienes algo que te apasiona.
+            </p>
+
+            <p>
+                Todavía no he tenido la oportunidad de verte jugar en
+                persona, de verte correr detrás del balón ni de estar
+                entre las gradas animándote. Pero eso no significa que
+                no pueda sentir orgullo de ti.
+            </p>
+
+            <p>
+                Me gusta saber que tienes algo que disfrutas, algo en lo
+                que puedes esforzarte y seguir creciendo. Quiero que
+                disfrutes cada partido, que aprendas de cada experiencia
+                y que nunca pierdas las ganas de hacer lo que te gusta.
+            </p>
+
+            <p>
+                Quizá algún día pueda estar ahí, viéndote jugar, buscándote
+                entre todos los jugadores y sintiendo esos nervios bonitos
+                de querer que todo te salga bien.
+            </p>
+
+            <p>
+                Y aunque todavía no sé cómo será ese momento, sé que me
+                haría muchísima ilusión vivirlo contigo.
+            </p>
+
+            <div class="frase-destacada">
+                <span class="comilla">“</span>
+
+                <p>
+                    Todavía no te he visto jugar, viejito,
+                    pero ya estoy orgullosa de ti.
+                </p>
+
+                <span class="comilla comilla-final">”</span>
+            </div>
+
+            <p class="cierre-orgullo">
+                No necesitas ganar todos los partidos para hacerme sentir
+                orgullosa. Quiero verte disfrutar, crecer y perseguir
+                aquello que te hace feliz.
+
+                <strong>
+                    Siempre voy a desear que te vaya bonito,
+                    dentro y fuera de la cancha. 💙
+                </strong>
+            </p>
+        </section>
+
+        <!-- Estadísticas simbólicas -->
+        <section class="seccion estadisticas">
+            <div class="encabezado-seccion">
+                <span class="numero-seccion">03 / MI MARCADOR FAVORITO</span>
+
+                <h2>Hay cosas que no se miden con goles.</h2>
+
+                <p>Algunas se sienten y ya. ⚽</p>
+            </div>
+
+            <div class="estadisticas-grid">
+
+                <article class="estadistica">
+                    <span class="estadistica-icono">💙</span>
+                    <strong>∞</strong>
+                    <span>Orgullo por ti</span>
+                </article>
+
+                <article class="estadistica">
+                    <span class="estadistica-icono">⚽</span>
+                    <strong>100%</strong>
+                    <span>Mi apoyo</span>
+                </article>
+
+                <article class="estadistica">
+                    <span class="estadistica-icono">🏆</span>
+                    <strong>1</strong>
+                    <span>Jugador favorito</span>
+                </article>
+
+            </div>
+
+            <p class="nota-estadisticas">
+                Estadísticas no oficiales, pero sentimientos muy reales. ♡
+            </p>
+        </section>
+
+        <!-- Carta final -->
+        <section class="seccion carta-final">
+            <div class="carta-borde">
+
+                <span class="carta-icono">✦</span>
+
+                <p class="numero-seccion">PARA TI, MI VIEJITO</p>
+
+                <h2>Y si algún día me ves entre las gradas...</h2>
+
+                <p>
+                    Espero poder regalarte una sonrisa, aplaudirte
+                    y hacerte saber que estoy ahí, feliz de verte
+                    haciendo algo que te gusta.
+                </p>
+
+                <p>
+                    No importa cómo termine el partido.
+                    Para mí, lo bonito será poder vivir ese momento
+                    y verte disfrutarlo.
+                </p>
+
+                <p class="carta-final-frase">
+                    Hasta que llegue ese día,
+                    aquí tienes un pedacito de todo el orgullo
+                    que siento por ti. 💙
+                </p>
+
+                <div class="firma">
+                    <span>Con mucho cariño,</span>
+                    <strong>quien ya tiene a su jugador favorito. ♡</strong>
+                </div>
+
+                <div class="balon-final" aria-hidden="true">⚽</div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>HECHO CON CARIÑO 💙</span>
+        <span>MI JUGADOR FAVORITO · SIEMPRE</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
